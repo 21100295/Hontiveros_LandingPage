@@ -1,0 +1,116 @@
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Set minimum height to at least 100% of viewport height */
+  background-color: #121212; /* Dark background color for the body */
+  color: #ffffff; /* White text color */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for dark mode */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Navigation Bar Styles */
+.navbar {
+  background-color: #212529; /* Dark background color */
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+  color: #ffffff; /* White text color */
+  transition: color 0.3s; /* Smooth transition for text color */
+}
+
+.navbar-brand:hover, .navbar-nav .nav-link:hover {
+  color: #ffcc00; /* Yellow text color on hover */
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff; /* White color for the toggler icon */
+}
+
+.navbar-toggler {
+  border-color: #ffffff; /* White color for the toggler button border */
+}
+
+/* Homepage Styles */
+.jumbotron {
+  background-color: #212529; /* Dark background color for the jumbotron */
+  color: #ffffff; /* White text color for the jumbotron */
+  margin-bottom: 0; /* Remove margin to prevent extra scrolling */
+}
+
+.jumbotron h1, .jumbotron p {
+  transition: color 0.3s; /* Smooth transition for text color */
+}
+
+/* Featured Services Section */
+.card-deck .card {
+  background-color: #212529; /* Dark background color for the cards */
+  border: none; /* Remove card borders */
+  transition: background-color 0.3s; /* Smooth transition for card background */
+}
+
+.card-deck .card img {
+  border-bottom: 1px solid #ffffff; /* White border under card images */
+}
+
+.card-deck .card-title,
+.card-deck .card-text {
+  color: #ffffff; /* White text color for card titles and text */
+}
+
+.card-deck .card:hover {
+  background-color: #343a40; /* Darker background color on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #212529; /* Dark background color for the footer */
+  color: #ffffff; /* White text color */
+  padding: 10px 0;
+  margin-top: auto; /* Push the footer to the bottom */
+  text-align: center;
+  transition: background-color 0.3s; /* Smooth transition for footer background */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+  .navbar-nav .nav-link {
+    margin-right: 0; /* Remove margin for small screens */
+  }
+}
+
+/* About Page Styles */
+.about-container {
+  background-color: #121212; /* Dark background color for the about section */
+  color: #ffffff; /* White text color */
+  padding: 40px 0;
+}
+
+.about-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-description {
+  font-size: 18px;
+  line-height: 1.6;
+}
